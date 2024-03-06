@@ -1,0 +1,320 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Object Identification with FPV Drone</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Object Identification with FPV Drone" />
+	<meta name="keywords" content="deep learning, computer vision, machine learning, ai, YOLOv8" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Google Webfont -->
+	<link href='https://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+	<!-- Themify Icons -->
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<!-- Icomoon Icons -->
+	<link rel="stylesheet" href="css/icomoon-icons.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Easy Responsive Tabs -->
+	<link rel="stylesheet" href="css/easy-responsive-tabs.css">
+	<!-- Theme Style -->
+	<link rel="stylesheet" href="css/style.css">
+
+	
+	<!-- FOR IE9 below -->
+	<!--[if lte IE 9]>
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+		<!-- Header -->
+		<header id="fh5co-header" role="banner">
+			<div class="container">
+				<!-- Logo -->
+				<div id="fh5co-logo">
+					<a href="index.html">
+						<img src="images/logo_.png" alt="Work Logo">
+					</a>
+
+				</div>
+				<!-- Logo -->
+				
+				<!-- Mobile Toggle Menu Button -->
+				<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+				
+				<!-- Main Nav -->
+				<div id="fh5co-main-nav">
+					<nav id="fh5co-nav" role="navigation">
+						<ul>
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li class="fh5co-active">
+								<a href="inside-page4.html">Project Showcase</a>
+							</li>
+							<li>
+								<a href="about-me.html">About Me</a>
+							</li>
+						</ul>
+						<!--<a href="#" class="fh5co-nav-call-to-action js-fh5co-nav-call-to-action">Get Started</a>-->
+					</nav>
+				</div>
+				<!-- Main Nav -->
+			</div>
+		</header>
+		<!-- Header -->
+
+		<main role="main">
+			<!-- Start Intro -->
+			<div id="fh5co-intro">
+				<div class="container">
+					<div class="col-md-6">
+					<h1>Object ID with FPV Drone</h1></div>
+						<div class="row">
+							<div class="col-md-push-6">
+								<p>Training a computer vision model to detect people within frame of an FPV drone camera.</p>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="fh5co-spacer fh5co-spacer-xxs"></div>
+			<!-- End Intro -->
+			
+			<div class="container">
+				<div class="row">
+					<center><div class="col-md-12">
+					<p><a href="object_detection_images/obj_track_vid.gif" class="image-popup"><img src="object_detection_images/obj_track_vid.gif" class="img-responsive" alt="image"></a></p>
+					</div></center>
+
+
+				<!-- Tabs -->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+								<h2 class="fh5co-uppercase-heading-sm text-center">Project Overview</h2>
+								
+								<div class="fh5co-spacer fh5co-spacer-"></div>
+								
+								<!-- Center Tabs -->
+								<div id="fh5co-tab-feature-center" class="fh5co-tab text-center">
+									<ul class="resp-tabs-list hor_1">
+										<li><i class="fh5co-tab-menu-icon ti-ruler-pencil"></i>Skills</li>
+										<li><i class="fh5co-tab-menu-icon ti-paint-bucket"></i>Tools</li>
+										<li><i class="fh5co-tab-menu-icon ti-bookmark"></i>More</li>
+									</ul>
+									<div class="resp-tabs-container hor_1">
+										<div>
+											<div class="row">
+												<div class="col-md-12">
+													<h2 class="h3">Skills at a Glance</h2>
+												</div>
+												<div class="col-md-6">
+													<p><li>Computer Vision</li>
+														<li>Deep Learning</li>
+														<li>Machine Learning</li>
+														<li>AI</li>
+														<li>Model & Metric Analysis</li>
+														<li>Data Analysis</li>
+														<li>Data Cleaning</li>
+														<li>Python</li>
+													</p>
+												</div>
+												<div class="col-md-6">
+													<p>Training an <a target="_blank" rel="noopener noreferrer" href="https://docs.ultralytics.com/">Ultralytics YOLOv8</a> computer vision model to detect people in a real-time video feed from an FPV drone. Analyzing the model throughout the training & making any adjustments to fine-tune it's learning was key to developing an accurate model. Locating, cleaning, annotating, & sorting data were critical in the configuration, and without which there would be no model.</p>
+												</div>
+											</div>
+										</div>
+										<div>
+											<div class="row">
+												<div class="col-md-12">
+													<h2 class="h3">Tools at a Glance</h2>
+												</div>
+												<div class="col-md-6">
+													<p><li>Object ID & Computer Vision Model Training</li>
+														<li>Data Annotation Software</li>
+														<li>Visual Studio Code</li>
+														
+														
+												</div>
+												<div class="col-md-6">
+													<p>After locating & reviewing an adequate dataset for my project, I ran images through <a target="_blank" rel="noopener noreferrer" href="https://www.cvat.ai/">CVAT</a> to edit & add additional annotations to the data. After sorting and filing data into a usable structure, I developed a configuration file which integrated into an object detection model. Training the model through multiple iterations allowed me to track & analyze the model's learning progress by analyzing the model's loss function curves, accuracy function curves, & sample output. Once trained, by adjusting the source parameters of the model, I was able to feed real-time video through the model as seen in the project heading above.</p>
+												</div>
+											</div>
+										</div>
+										<div>
+											<div class="row">
+												<div class="col-md-12">
+													<h2 class="h3">Code & More Information</h2>
+												</div>
+												<div class="col-md-12">
+													<p>Check out my write-up below & find the code for the project in the <a target="_blank" rel="noopener noreferrer" href="https://github.com/cslyons1/object_identification">GitHub repo</a>!</p>
+													
+													
+												
+												
+												
+												</div>
+												
+													
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Center Tabs -->
+							
+
+							<hr class="fh5co-spacer fh5co-spacer-xxs">
+
+							<div class="col-md-12">
+
+
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="fh5co-spacer fh5co-spacer-xxs"></div>
+			
+			<!-- Start Write-Up -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="h2">Project overview</h2>
+						<p>Object detection models are a class of deep learning algorithms used to identify and locate objects within images or videos. Recently, I built a new fpv drone to add to my collection (link to drone build) and, while flying and viewing the fpv video, I became interested in whether I could feed the video output from the drone through an object detection model and identify objects within frame. I have seen projects developed which take prerecorded video and stationary webcam video to feed into an object detection model but, given that I have drones which provide me with live views of their surroundings at large distances, I wanted to feed real-time video from a drone through a model for mobile detection. Specifically, the goal I set for the first variation of this project was identifying people within the video feed of my drone.</p>
+						
+						<h5 class="h5">Locating Dataset</h5>
+						<p>Object detection models are only as good (read: accurate) as the data being fed to them. Large, complete datasets with proper annotations yield better testing results. As such, I browsed hundreds of datasets to find one I felt comfortable using. I landed on the Human Detection Dataset hoted on <a target="_blank" rel="noopener noreferrer" href="https://www.kaggle.com/datasets/fareselmenshawii/human-dataset">Kaggle</a>. This dataset consists of nearly 18,000 images complete with their associated annotation files.</p>
+						<p>Typically once a set of images is located, cleaning any irrelevant or unwanted data from the set needs to occur. This is achieved by visually reviewing individual image in the dataset and gauging it’s usefulness to the dataset as a whole. If any individual file is deemed not beneficial to the overall set, it can be removed. Once any unwanted files are deleted, classifying the items in the images needs to occur. This entire process is known as annotating and usually occurs by passing the data through an annotation software. An online-based annotation software such as <a target="_blank" rel="noopener noreferrer" href="https://www.cvat.ai/">CVAT</a> is an excellent annotation tool. It allows you to select individual pieces of an image and place a label on each selection to note what that selection is. In this case, if my data was unannotated, I would set my selection to “person”, and draw a box around each individual person located in an image. This process would be repeated on each file in the dataset.</p>
+						<p>After each file is labeled properly, the entire dataset can be exported in the format that matches your model. In this case, I would export as “yolo(version)” as I am creating a YOLO model for the object identification. This outputs a .txt file for each file in the original dataset in a folder of “labels” that is in a usable format by the YOLO tool – each file has an array of numbers associated to an attribute in each image with every line representing a selection in the named file, as seen below.</p>
+						<p><center><img src="object_detection_images/data_and_txt.PNG" class="img-responsive"></center></p>
+
+						<p>The first number, (0), is the label of the class being identified. Since I am only interested in identifying people, my class identifier number (which I intend to name “person” in my configuration file later) is stored as the first value in a set indexed to zero. The next number is the x coordinate center point of selection. The third is the y coordinate center point. The remaining two numbers are width and height of the selection along the x and y axes, respectively. Every object in the image that matches the “person” class is selected and annotated, creating a file with multiple rows of values, one for each object. These .txt “label” files are named to match the original image file in the dataset and saved in a separate folder which will allow them to be easily associated to each other when running an object detection model.</p>
+						
+						<p>Since the dataset I used was previously cleaned and annotated, I could proceed in saving my files in a proper folder structure after a quick review of the files to verify accuracy of the labels. Images and labels were split between a training set (containing 13,754 images) and a validation set used to test against the model once trained (containing 4,000 images), labeled as such, and placed in the appropriate folder.</p>
+						
+						<h5 class="h5">Creating the Model</h5>
+						<p>It was then time to begin creating my object detection model. The first step in this was to install the Ultralytics library and import relevant tools to my virtual environment within Visual Studio Code. Once that was complete, I could set a main directory variable with the location of where my files resided and select a model for my project. I used the nano version of the YOLOv8 models for this project (to view the differences in the various models, please see the <a target="_blank" rel="noopener noreferrer" href="https://docs.ultralytics.com/models/yolov8/#overview">Ultralytics</a> page).</p>
+						
+						<p>In order to train this model, a .yaml configuration file needed to be created to set the various parameters our model would use to train within, as seen below. This file notes the location of the training dataset, the validation dataset, and the classes for the objects to be identified in our model. This file was placed in the main folder for the project.</p>
+						<p><center><img src="object_detection_images/config_file.PNG" class="img-responsive"></center></p>
+
+						<p>I ran the initial model for one epoch, or cycle to verify the execution would not crash while training. After running the model, I was able to review the image collage outputs to get a quick feel of how accurate the model would perform in a more comprehensive training (seen below).</p>
+						<p><center><img src="object_detection_images/val_batch1_labels.jpg" class="img-responsive"></center></p>
+
+						<p>After checking to make sure the model was (mostly) identifying people within the images being fed to the model, I created a new function to pass the output of the originally trained model through a new training cycle, this time for 10 epochs. I monitored each run periodically to make sure no glaring issues arose over the multiple hour process.</p>
+
+						<p>Once this was complete I began to review the testing results. This involves reviewing various measurements output by the model in the form of figures. These figures display functions for each set subset of data known as curves. Broadly, there are two categories of curves:</p>
+						<ul><ol>
+							<li>loss – a representation of the difference between a dataset’s actual values and a model’s prediction values</li>
+							<li>accuracy – how good a model is at making predictions</li>
+						</ol></ul>
+
+						<p>As seen below in the loss figures (boxed in blue), the loss function curves for both the training data (blue line) and validation data (orange line) were trending downward. This means that the model’s prediction errors were decreasing as is iterated through each epoch. This is good news for the model.  As additional testing is conducted on this model, we would expect to see the curve begin to flatten as its error levels minimize. In addition, the accuracy curves (boxed in green) were upward trending. This means that the model was becoming increasingly accurate as it iterated through each epoch. Again, this is good news for the model with the expectation that these curves would begin to flatten as accuracy levels increase.</p>
+						<p><center><img src="object_detection_images/results_curves.png" class="img-responsive"></center></p>
+
+						<p>Reviewing an image output collage, you can see that the model was more accurately selecting the people within the images compared to the initial training.</p>
+						<p><center><img src="object_detection_images/val_batch1_labels.jpg" class="img-responsive"></center></p>
+
+						<h5 class="h5">Scripting and Function Development for Video Input</h5>
+						<p>Happy with these results, I proceeded to create a script to apply the detection from my model in real-time to a video input. Relevant libraries were again imported. This script function allows a user to specify a video input source (source “0” being a webcam input).</p>
+						<p><center><img src="object_detection_images/live_script.PNG" class="img-responsive"></center></p>
+												
+						<p>First, to test the functionality of this script, I used the feed of a mirror-less camera I have connected to a video capture device on my PC, as seen below. Once this was working I could begin modifying my setup to work with my live video input from my drone.</p>
+						
+						<p>To understand how I am getting this video feed from my drone, I need to briefly explain how an fpv drone outputs video, and my personal method for video transmission. To simplify, an fpv drone takes video input from a camera, passes it through the flight flight controller (the brains of the drone) which processes and converts the camera input data. The flight controller then passes the converted data to a video transmitter which then broadcasts the video via an antenna. This video broadcast is received by a video receiver antenna which processes the broadcast and outputs the video to a screen.</p>
+						
+						<p>In my case, I am receiving my drone’s video broadcast via an external module that is typically connected to the display of fpv goggles via an AV port. I am able to power this device using a variable DC voltage power supply, collect the video transmission via omni-directional and patch antennas, and output the video feed to a display using a 3.5mm AV port to standard RCA AV connections to a monitor.</p>
+						<p><center><img src="object_detection_images/IMG_0529.jpg" class="img-responsive"></center></p>
+
+						<p>I placed my drone off to the side of my workspace, connected a battery, and made sure it was communicating with my receiver. This setup was a success, the DVR results of which are shown in the gif you see at the top of the page!</p>
+						
+						<p>The last thing I wanted to do was pass a video through the model to verify that it also works on recorded video data. I found an open source video of people walking, adjust the input source in my code to pass the video through and the results are below. As you can see, the model is working very well for only having been trained for 10 epochs. With additional training and, in turn, lower loss values and increased accuracy, inputs such as the group of people on the left hand side of the video should also become detectable.</p>
+						<p><center><video class="img-responsive" controls="controls">
+							<source src="object_detection_images/person_test_vid.mp4" type="video/mp4" />
+						   </video></center></p>
+
+						<h5 class="h5">Summary</h5>
+						<p>Overall I am very happy with the results of this project. Through the development and implementation of an object detection model on a real-time video feed, I am able to identify people within the view of my fpv drone. Moving forward, I plan to use additional datasets and more classes of objects to continue training my model which will allow me to expand the items detected and classified within the video feeds!</p>
+												
+					</div>
+				</div>
+			</div>
+			<!-- End  Write-Up -->
+			<div class="fh5co-spacer fh5co-spacer-sm"></div>
+
+		</main>
+
+		<footer id="fh5co-footer" role="contentinfo">
+			<div class="container">
+				<div class="row">
+					<div class="text-center col-md-12">
+						<ul class="fh5co-footer-social">
+							<li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/cody-lyons/">LinkedIn</a></li>
+							<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/cslyons1">GitHub</a></li>
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<!-- Go To Top -->
+		<a href="#" class="fh5co-gotop"><i class="ti-shift-left"></i></a>
+		
+			
+		<!-- jQuery -->
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<!-- jQuery Easing -->
+		<script src="js/jquery.easing.1.3.js"></script>
+		<!-- Bootstrap -->
+		<script src="js/bootstrap.js"></script>
+		<!-- Owl carousel -->
+		<script src="js/owl.carousel.min.js"></script>
+		<!-- Magnific Popup -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<!-- Easy Responsive Tabs -->
+		<script src="js/easyResponsiveTabs.js"></script>
+		<!-- FastClick for Mobile/Tablets -->
+		<script src="js/fastclick.js"></script>
+		<!-- Velocity -->
+		<script src="js/velocity.min.js"></script>
+
+		<!-- Google Map -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+		<script src="js/google_map.js"></script>
+		
+		<!-- Main JS -->
+		<script src="js/main.js"></script>
+
+	</body>
+</html>
