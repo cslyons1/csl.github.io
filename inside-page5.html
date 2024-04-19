@@ -1,0 +1,338 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Pitching Injury Analysis</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Pitching Injury Analysis" />
+	<meta name="keywords" content="baseball data, python, data visualization, data science, data analysis" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Google Webfont -->
+	<link href='https://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+	<!-- Themify Icons -->
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<!-- Icomoon Icons -->
+	<link rel="stylesheet" href="css/icomoon-icons.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Easy Responsive Tabs -->
+	<link rel="stylesheet" href="css/easy-responsive-tabs.css">
+	<!-- Theme Style -->
+	<link rel="stylesheet" href="css/style.css">
+
+	
+	<!-- FOR IE9 below -->
+	<!--[if lte IE 9]>
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+		<!-- Header -->
+		<header id="fh5co-header" role="banner">
+			<div class="container">
+				<!-- Logo -->
+				<div id="fh5co-logo">
+					<a href="index.html">
+						<img src="images/logo_.png" alt="Work Logo">
+					</a>
+
+				</div>
+				<!-- Logo -->
+				
+				<!-- Mobile Toggle Menu Button -->
+				<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+				
+				<!-- Main Nav -->
+				<div id="fh5co-main-nav">
+					<nav id="fh5co-nav" role="navigation">
+						<ul>
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li class="fh5co-active">
+								<a href="inside-page5.html">Project Showcase</a>
+							</li>
+							<li>
+								<a href="about-me.html">About Me</a>
+							</li>
+						</ul>
+						<!--<a href="#" class="fh5co-nav-call-to-action js-fh5co-nav-call-to-action">Get Started</a>-->
+					</nav>
+				</div>
+				<!-- Main Nav -->
+			</div>
+		</header>
+		<!-- Header -->
+
+		<main role="main">
+			<!-- Start Intro -->
+			<div id="fh5co-intro">
+				<div class="container">
+					<div class="col-md-6">
+					<h1>Increasing Pitching Injuries Related to Pitch Velocities</h1></div>
+						<div class="row">
+							<div class="col-md-push-6">
+								<p>Using various Python libraries including Pandas, Scikit-Learn, SciPY, Matplotlib, & Pybaseball, pitch-level stats dating back to 2008 were sorted by one of four most common pitch types, condensed to their median values, & plotted against data arranged in a similar fashion showing MLB pitcher injuries requiring Tommy John surgeries. Regression lines were added to show trends in the datasets, & Spearman Rho values were calculated to help analyze correlation in the results.</p>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="fh5co-spacer fh5co-spacer-md"></div>
+			<!-- End Intro -->
+			
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+					<p><a href="injuries/head.PNG" class="image-popup"><img src="injuries/head.PNG" class="img-responsive" alt="image"></a></p>
+					</div>
+
+
+				<!-- Tabs -->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+								<h2 class="fh5co-uppercase-heading-sm text-center">Project Overview</h2>
+								
+								<div class="fh5co-spacer fh5co-spacer-"></div>
+								
+								<!-- Center Tabs -->
+								<div id="fh5co-tab-feature-center" class="fh5co-tab text-center">
+									<ul class="resp-tabs-list hor_1">
+										<li><i class="fh5co-tab-menu-icon ti-ruler-pencil"></i>Skills</li>
+										<li><i class="fh5co-tab-menu-icon ti-paint-bucket"></i> Tools</li>
+										<li><i class="fh5co-tab-menu-icon ti-bookmark"></i> Code & More</li>
+									</ul>
+									<div class="resp-tabs-container hor_1">
+										<div>
+											<div class="row">
+												<div class="col-md-12">
+													<h2 class="h3">Skills at a Glance</h2>
+												</div>
+												<div class="col-md-6">
+													<p><li>Python</li>
+														<li>Data Analysis</li>
+														<li>Data Science</li>
+														<li>Data Cleaning, Creation, & Manipulation</li>
+														<li>Data Visualization</li>
+													</p>
+												</div>
+												<div class="col-md-6">
+													<p>Functions were coded for ease of plotting the relationship between an individual pitch type's increasing velocities & pitching injuries requiring Tommy John surgeries. This function filters the <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/1gQujXQQGOVNaiuwSN680Hq-FDVsCwvN-3AazykOBON0/edit#gid=0">Tommy John Surgeries database</a> (created by Jon Roegele @mlbplaeranalys) while sorting & totaling it by year, pulls Statcast data for each individual pitch from 2008 through 2023 using the <a target="_blank" rel="noopener noreferrer" href="https://github.com/jldbc/pybaseball">Pybaseball Github library</a>, creates a condensed dataframe with total injury data & median pitch velocities filtered for each specified pitch type, & plots this information in an easily-digestible manner. Regression lines showing the trend in each set of data are overlaid on the plot while Spearman Rho values & p-values are calculated to make inferences on correclation.</p>
+												</div>
+											</div>
+										</div>
+										<div>
+											<div class="row">
+												<div class="col-md-12">
+													<h2 class="h3">Tools at a Glance</h2>
+												</div>
+												<div class="col-md-6">
+													<p><li>Python</li>
+														<li>Google Colab</li>
+														<li>Pandas</li>
+														<li>Matplotlib</li>
+														<li>Scikit-Learn</li>
+														<li>SciPy</li>
+														<li>Seaborn</li>
+														<li>Pybaseball</li>
+														<li>Gimp - GNU Image Manipulation Program</li>
+												</div>
+												<div class="col-md-6">
+													<p>Python functions in the <a target="_blank" rel="noopener noreferrer" href="https://github.com/jldbc/pybaseball/">Pybaseball</a> library are used to access pitch-level data for each specified season, Pandas is used for data frame creation & manipulation, Matplotlib & Seaborn for developing general plots, Scikit-Learn & SciPy to analyze regression & correlation, & finally GIMP for visually assembling the summary chart for quick reference.</p>
+												</div>
+											</div>
+										</div>
+										<div>
+											<div class="row">
+												<div class="col-md-12">
+													<h2 class="h3">Code Repository</h2>
+												</div>
+												<div class="col-md-12">
+													<p>To read the write-up for this project, keep scrolling below!</p>
+													<p>To view the full code for this project, please check out the <a target="_blank" rel="noopener noreferrer" href="https://github.com/cslyons1/injury_analysis">Github repo</a>.</p>
+													
+												
+												
+												
+												</div>
+												
+													
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Center Tabs -->
+							
+
+							<hr class="fh5co-spacer fh5co-spacer-xxs">
+
+							<div class="col-md-12">
+
+
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="fh5co-spacer fh5co-spacer-xxs"></div>
+			
+
+													<!-- Start SLIDER -->
+													<div id="js-fh5co-slider">
+														<div class="container">
+															<div class="fh5co-spacer fh5co-spacer-xs"></div>
+															<h2 class="fh5co-uppercase-heading-sm text-center">Quick View of Plots for Each Pitch Type</h2>
+															<div class="fh5co-spacer fh5co-spacer-xxs"></div>
+															<div class="row">
+																<div class="col-md-12">
+																	<div class="owl-carousel owl-carousel-fullwidth">
+																		<div href="injuries/fs.PNG" class="image-popup"><img src="injuries/fs.PNG" class="img-responsive" alt="image"></div>
+																		<div href="injuries/curve.PNG" class="image-popup"><img src="injuries/curve.PNG" class="img-responsive" alt="image"></div>
+																		<div href="injuries/change.PNG" class="image-popup"><img src="injuries/change.PNG" class="img-responsive" alt="image"></div>
+																		<div href="injuries/slider.PNG" class="image-popup"><img src="injuries/slider.PNG" class="img-responsive" alt="image"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- End SLIDER -->
+
+			<div class="fh5co-spacer fh5co-spacer-xxs"></div>
+
+
+			<!-- Start Write-Up -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h5 class="h5">What is the issue? Exploring the relationship between injuries requiring Tommy John Surgery and increasing pitch velocities</h5>
+						<p>The MLB has seen a notable increase in pitching injuries in the last decade, with 115 pitchers requiring Tommy John Surgery (surgery undergone to repair a torn ulnar collateral ligament in the elbow) between 2020 and 2023. This number is up nearly 92%, from 60 pitching injuries requiring Tommy John Surgery since 2008. While there are many factors which may contribute to this problem, the MLB Players Association (MLBPA) recently released a statement alleging reduced recovery times between pitches due to the newly (since 2023) instituted pitch clock to be the culprit.</p>
+						
+						<h5 class="h5">Hypothesis: increased velocities are a direct contributor to the increase in injuries requiring Tommy John Surgery</h5>
+						<p>While the pitch clock may be contributing to a lack of sufficient recovery time between pitches and ultimately increasing a pitchers’ fatigue and risk of injury since 2023, many others in the analytics community believe the emphasis on high pitching velocities is the more significant factor to blame for the longer growing trend of pitching injuries.</p>	
+						
+						<h5 class="h5">Injury Stat Data</h5>
+						<p>In order to gain a better understanding of the trend in Tommy John Surgery numbers, I will be using the <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/1gQujXQQGOVNaiuwSN680Hq-FDVsCwvN-3AazykOBON0/edit#gid=0">Tommy John Surgeries database</a> (created by Jon Roegele @mlbplaeranalys). This database contains entries for all Tommy John Surgeries for MLB and MiLB players which have been confirmed via media reports in some capacity (please note: some Tommy John Surgeries go unreported as some teams are more guarded of their injury data).</p>
+						<p>A .csv file of the data was downloaded and saved to my Google Drive and imported into a Google Colab notebook. Once imported, I filtered the data to contain only pitchers in the MLB. Surgery dates were converted using the datetime() function with the results filtered by year. A new variable was created and set to a value of one, marking one instance of a confirmed Tommy John Surgery for that player. I then created a new data frame using a slice of the original containing only the surgery year and a sum of the total confirmed Tommy John Surgeries. Since I will only be able to access full Statcast data beginning at 2008, I trimmed the Tommy John Surgery data frame to match. This will make the data cleaner to plot later in the project.</p>
+						
+						<center><img src="injuries/injury_chart.PNG" class="img-responsive"></center>
+						<center><img src="injuries/injury_chart2.PNG" class="img-responsive"></center>	
+						
+						<p>As you can see from the output chart above, there is an obvious increase in the total number of Tommy John Surgeries undergone from 2008 until 2023, with 2024 showing an upward trend with 10 confirmed Tommy John Surgeries less than one month into regular-season play. To put this into perspective, the league only saw an average of 15 total surgeries per an entire season from 2008-2011.</p>	
+						
+						<h5 class="h5">Pitching Stat Data</h5>
+						<p>As noted, the earliest available Statcast data we can retrieve used to analyze pitch-level data in the MLB beginning in 2008. To help gain the most comprehensive understanding of pitching trends in the league I could with the given data, I pulled every full season of data since Statcast’s debut as individual .csv files, totaling 16 complete seasons worth of data.</p>	 
+						<p>Each year’s .csv file was set to a variable in the Google Colab notebook. For ease of plotting in later portions of the project, the release_speed columns in each data frame were renamed to the year which they came from. From there, new data frames were again created using slices of the originals, filtering by release speed (now renamed to year_velo) and the pitch name. From there, we can easily filter the new data frames by the pitch types we are looking at: four-seam fastball, curveball, changeup, and slider.</p>
+						
+						<center><img src="injuries/injury_chart3.PNG" class="img-responsive"></center>	
+						
+						<p>Proceeding, and within context of the obtained data, we know the following statements to be true:
+							<ol><ul>
+								<li>the number of pitchers used by each team will vary from year to year</li>
+								<li>the speed at which each pitch is thrown and the movement of each pitch of each type will vary (i.e. there exists human error in repeating pitches identically)</li>
+								<li>the speed characteristics of each unique pitch type varies (e.g. a four-seam fastball is meant to have a higher velocity than a change-up, sliders are meant to have higher velocities than curveballs, etc.)</li>
+								<li>each unique pitch will be thrown a different amount of times in each season</li>
+							</ul></ol>
+						</p>
+						<p>The facts above will affect the season-level summary metric of pitch velocity. As such, I decided it would be best to isolate and analyze each pitch type individually by its median value. The charts below show the median velocities for each pitch type as well as total confirmed Tommy John Surgeries between 2008 and 2023.</p>
+						<center><img src="injuries/velo_and_injury_chart1.PNG" class="img-responsive"></center>
+						<center><img src="injuries/velo_and_injury_chart2.PNG" class="img-responsive"></center>
+						<center><img src="injuries/velo_and_injury_chart3.PNG" class="img-responsive"></center>
+						<center><img src="injuries/velo_and_injury_chart4.PNG" class="img-responsive"></center>
+						
+						<p>As you can see, median values for each of our pitch types have consistently increased between 2008 and 2023.</p>
+
+						<h5 class="h5">Plotting the Data</h5>
+						<p>Below are the injury list statistics overlaid on the velocity statistics. As you can see in the case of each selected pitch type, the trend in median velocity increased consistently between 2008 and 2023. Additionally, injury metrics trended in the same direction. Spearman Rho values indicate a low-to-moderate level of correlation between the increasing velocities and total number of Tommy John Surgeries in the league.</p>	
+						<center><img src="injuries/fs.PNG" class="img-responsive"></center>
+						<center><img src="injuries/curve.PNG" class="img-responsive"></center>
+						<center><img src="injuries/change.PNG" class="img-responsive"></center>
+						<center><img src="injuries/slider.PNG" class="img-responsive"></center>						
+						
+
+						<h5 class="h5">Conclusion & Limitations: was this hypothesis correct?</h5>
+						<p>Based on the evidence presented above, there appears to be a correlation between increasing pitch velocities and the number of injuries in pitchers requiring Tommy John Surgeries. As shown, regression lines for each pitch type trend upward while the confirmed surgeries line does the same. As noted, the Spearman Rho values and p-values confirm a correlation between between velocities and surgeries.</p>
+						<p>With that in mind, there are limiting factors to my analysis, the biggest being a lack of vetted injury data provided by official league sources. As mentioned, club-specific injury data is often not released to the public. While the Tommy John Surgeries dataset used for this analysis is a very good start, without a full vetted list from the league there may be ommissions in the data. Additionally, pitch-level Statcast data is only available at the MLB level. MiLB and prior levels of play do not have the same comprehensive pitching data available for analysis. As injuries at the professional level often stem from an accumulation of repeated damage beginning at youth-level play, additional research would need to be conducted at these lower levels to gain a better understanding of the relationship between pitch velocities and Tommy John Surgeries. Stressors on the arm from additional angles stemming from the mechanics necessary to allow for greater ball movement when throwing breaking pitches can also not be ruled out when analyzing these injuries. An absolute value of movement on both the x and y axes could be explored in relation to increasing velocity in future analyses.</p>
+						<p>While the pitch clock may be partially contributing to the increase in pitching injuries beginning in 2023, there may be more significant indicators present pre-dating its institution, with pitching velocities mirroring the increase in Tommy John Surgeries in the MLB. Advocating for the proper treatment and care of pitchers beginning at lower levels of play, while helping refine mechanics, rhythms, and rest protocols to better adapt to the changing parameters of the game, may be a beneficial approach to remedying the situation.</p>	
+						
+					</div>
+				</div>
+			</div>
+			<!-- End  Write-Up -->
+			<div class="fh5co-spacer fh5co-spacer-sm"></div>
+
+		</main>
+
+		<footer id="fh5co-footer" role="contentinfo">
+			<div class="container">
+				<div class="row">
+					<div class="text-center col-md-12">
+						<ul class="fh5co-footer-social">
+							<li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/cody-lyons/">LinkedIn</a></li>
+							<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/cslyons1">GitHub</a></li>
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<!-- Go To Top -->
+		<a href="#" class="fh5co-gotop"><i class="ti-shift-left"></i></a>
+		
+			
+		<!-- jQuery -->
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<!-- jQuery Easing -->
+		<script src="js/jquery.easing.1.3.js"></script>
+		<!-- Bootstrap -->
+		<script src="js/bootstrap.js"></script>
+		<!-- Owl carousel -->
+		<script src="js/owl.carousel.min.js"></script>
+		<!-- Magnific Popup -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<!-- Easy Responsive Tabs -->
+		<script src="js/easyResponsiveTabs.js"></script>
+		<!-- FastClick for Mobile/Tablets -->
+		<script src="js/fastclick.js"></script>
+		<!-- Velocity -->
+		<script src="js/velocity.min.js"></script>
+
+		<!-- Google Map -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+		<script src="js/google_map.js"></script>
+		
+		<!-- Main JS -->
+		<script src="js/main.js"></script>
+
+	</body>
+</html>
