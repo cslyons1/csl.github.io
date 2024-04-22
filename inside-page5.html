@@ -100,7 +100,7 @@
 					<h1>Increasing Pitching Injuries Related to Pitch Velocities</h1></div>
 						<div class="row">
 							<div class="col-md-push-6">
-								<p>Using various Python libraries including Pandas, Scikit-Learn, SciPY, Matplotlib, & Pybaseball, pitch-level stats dating back to 2008 were sorted by one of four most common pitch types, condensed to their median values, & plotted against data arranged in a similar fashion showing MLB pitcher injuries requiring Tommy John surgeries. Regression lines were added to show trends in the datasets, & Spearman Rho values were calculated to help analyze correlation in the results.</p>
+								<p>Using various Python libraries including Pandas, Scikit-Learn, SciPY, Matplotlib, & Pybaseball, pitch-level stats dating back to 2008 were sorted by one of four most common pitch types, condensed to their median values, & plotted against data arranged in a similar fashion showing MLB pitcher injuries requiring Tommy John Surgery. Regression lines were added to show trends in the datasets, & Spearman Rho values were calculated to help analyze correlation in the results.</p>
 							</div>
 						</div>
 				</div>
@@ -145,7 +145,7 @@
 													</p>
 												</div>
 												<div class="col-md-6">
-													<p>Functions were coded for ease of plotting the relationship between an individual pitch type's increasing velocities & pitching injuries requiring Tommy John surgeries. This function filters the <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/1gQujXQQGOVNaiuwSN680Hq-FDVsCwvN-3AazykOBON0/edit#gid=0">Tommy John Surgeries database</a> (created by Jon Roegele @mlbplaeranalys) while sorting & totaling it by year, pulls Statcast data for each individual pitch from 2008 through 2023 using the <a target="_blank" rel="noopener noreferrer" href="https://github.com/jldbc/pybaseball">Pybaseball Github library</a>, creates a condensed dataframe with total injury data & median pitch velocities filtered for each specified pitch type, & plots this information in an easily-digestible manner. Regression lines showing the trend in each set of data are overlaid on the plot while Spearman Rho values & p-values are calculated to make inferences on correclation.</p>
+													<p>Functions were coded for ease of plotting the relationship between an individual pitch type's increasing velocities & pitching injuries requiring Tommy John Surgery. This function filters the <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/1gQujXQQGOVNaiuwSN680Hq-FDVsCwvN-3AazykOBON0/edit#gid=0">Tommy John Surgeries database</a> (created by Jon Roegele @mlbplaeranalys) while sorting & totaling it by year, pulls Statcast data for each individual pitch from 2008 through 2023 using the <a target="_blank" rel="noopener noreferrer" href="https://github.com/jldbc/pybaseball">Pybaseball Github library</a>, creates a condensed dataframe with total injury data & median pitch velocities filtered for each specified pitch type, & plots this information in an easily-digestible manner. Regression lines showing the trend in each set of data are overlaid on the plot while Spearman Rho values & p-values are calculated to make inferences on correclation.</p>
 												</div>
 											</div>
 										</div>
@@ -250,20 +250,25 @@
 						<p>As you can see from the output chart above, there is an obvious increase in the total number of Tommy John Surgeries undergone from 2008 until 2023, with 2024 showing an upward trend with 10 confirmed Tommy John Surgeries less than one month into regular-season play. To put this into perspective, the league only saw an average of 15 total surgeries per an entire season from 2008-2011.</p>	
 						
 						<h5 class="h5">Pitching Stat Data</h5>
-						<p>As noted, the earliest available Statcast data we can retrieve used to analyze pitch-level data in the MLB begins in 2008. To help gain the most comprehensive understanding of pitching trends in the league I could with the given data, I pulled every full season of data since Statcast’s debut as individual .csv files, totaling 16 complete seasons worth of data.</p>	 
-						<p>Each year’s .csv file was set to a variable in the Google Colab notebook. For ease of plotting in later portions of the project, the release_speed columns in each data frame were renamed to the year which they came from. From there, new data frames were again created using slices of the originals, filtering by release speed (now renamed to year_velo) and the pitch name. From there, we can easily filter the new data frames by the pitch types we are looking at: four-seam fastball, curveball, changeup, and slider.</p>
+						<p>As noted, the earliest available Statcast data we can retrieve used to analyze pitch-level data in the MLB begins in 2008. To help gain the most comprehensive understanding of pitching trends in the league I could with the given data, I pulled every full season of data since Statcast’s debut as individual .csv files, totaling 16 complete seasons worth of data. Due to the size of each season's returned data frame, each season needed to be pulled individually.</p>
+						<center><img src="injuries/pitch_data.PNG" class="img-responsive"></center>	 
+						<p>For ease of plotting in later portions of the project, the release_speed columns in each data frame were renamed to include the year which they came from.</p>
+						<center><img src="injuries/pitch_data2.PNG" class="img-responsive"></center>	 
 						
+
+						<p>Each year’s .csv file was set to a variable in the Google Colab notebook. From there, new data frames were again created using slices of the originals, filtering by release speed (now renamed to year_velo) and the pitch name. From there, we can easily filter the new data frames by the pitch types we are looking at: four-seam fastball, curveball, changeup, and slider.</p>
 						<center><img src="injuries/injury_chart3.PNG" class="img-responsive"></center>	
 						
 						<p>Proceeding, and within context of the obtained data, we know the following statements to be true:
 							<ol><ul>
 								<li>the number of pitchers used by each team will vary from year to year</li>
-								<li>the speed at which each pitch is thrown and the movement of each pitch of each type will vary (i.e. there exists human error in repeating pitches identically)</li>
+								<li>the speed at which each pitch is thrown will vary (i.e. there exists human error in repeating pitches identically)</li>
 								<li>the speed characteristics of each unique pitch type varies (e.g. a four-seam fastball is meant to have a higher velocity than a change-up, sliders are meant to have higher velocities than curveballs, etc.)</li>
 								<li>each unique pitch will be thrown a different amount of times in each season</li>
 							</ul></ol>
 						</p>
-						<p>The facts above will affect the season-level summary metric of pitch velocity. As such, I decided it would be best to isolate and analyze each pitch type individually by its median value. The charts below show the median velocities for each pitch type as well as total confirmed Tommy John Surgeries between 2008 and 2023.</p>
+						<p>The facts above will affect the season-level summary metric of pitch velocity. As such, I decided it would be best to isolate and analyze each pitch type individually by its median value. I then combined the median velocities for each pitch type as well as total confirmed Tommy John Surgeries between 2008 and 2023 into one data frame per pitch type, as seen below.</p>
+						<center><img src="injuries/velo_and_injury_chart_code.PNG" class="img-responsive"></center>
 						<center><img src="injuries/velo_and_injury_chart1.PNG" class="img-responsive"></center>
 						<center><img src="injuries/velo_and_injury_chart2.PNG" class="img-responsive"></center>
 						<center><img src="injuries/velo_and_injury_chart3.PNG" class="img-responsive"></center>
@@ -272,7 +277,7 @@
 						<p>As you can see, median values for each of our pitch types have consistently increased between 2008 and 2023.</p>
 
 						<h5 class="h5">Plotting the Data</h5>
-						<p>Below are the injury list statistics overlaid on the velocity statistics. As you can see in the case of each selected pitch type, the trend in median velocity increased consistently between 2008 and 2023. Additionally, injury metrics trended in the same direction. Spearman Rho values indicate a low-to-moderate level of correlation between the increasing velocities and total number of Tommy John Surgeries in the league.</p>	
+						<p>I concluded that bar plots would be the best way to display the data as they are a very good way to show the relationship between two variables, given one constant. Additionally, this allowed me to pair two separate changing variables as they both held a matching constant value (year). Below are the injury list statistics overlaid on the velocity statistics. As you can see in the case of each selected pitch type, the trend in median velocity increased consistently between 2008 and 2023. Additionally, injury metrics trended in the same direction. Spearman Rho values indicate a low-to-moderate level of correlation between the increasing velocities and total number of Tommy John Surgeries in the league.</p>	
 						<center><img src="injuries/fs.png" class="img-responsive"></center>
 						<center><img src="injuries/curve.png" class="img-responsive"></center>
 						<center><img src="injuries/change.png" class="img-responsive"></center>
